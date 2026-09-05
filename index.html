@@ -1,42 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Work</title>
+</head>
+<style>
+    
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    <div class="bg-success container-fluid p-5 text-light" style="height: 300px;">
-    <h1 class="text-light text-center ">Hello Bootstrap!</h1>
-    <p class="text-center mt-5">Bootstrap is a CSS framework that helps to create websites faster and more easily. It was created in 2010 by twitter developers <b>Mark Otto</b> and <b>Jacob Thornton</b>. It was initially called <b>Twitter Blueprint</b>. Later, in 2011, it was released publicaly as <b>Bootstrap</b>. It gives ready-made:- Buttons, Navbar, Cards, Forms, Grids, Responsive layouts, Modals etc.</p>
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:#ffffff;
+}
+
+/* Header */
+header{
+    background:#0b1d3a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:30px;
+    letter-spacing:2px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+#footer{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        color: white;
+        background: #0b1d3a;
+        text-align: center;
+        padding: 10px;
+        clear: both;
+    }
+
+
+/* Main Content */
+.content ul{
+    margin: 20px;
+    display:grid;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+.content ul li a{
+    display: block;
+    background: linear-gradient(135deg, #e0edfd, #d6e9ff, #b3d6fe);
+    color: #0b1d3a;
+    box-shadow: 0px 4px 10px grey;
+    padding: 20px 10px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.3s;
+
+}
+.content ul li a:hover{
+    padding: 22px;
+    font-size: 25px;
+    background: linear-gradient(135deg,#acd2fd,#d6e9ff,#e0edfd);
+    color: #0b1d3a
+}
+
+
+/* Mobile Devices */
+@media (max-width: 600px){
+
+    header{
+        font-size:20px;
+        padding:15px;
+    }
+
+.content ul li a{
+    font-size: 20px;
+}
+
+    #footer{
+        margin-top: 10px;
+        font-size:14px;
+        padding:10px;
+    }
+}
+
+</style>
+<body>
+    <header>Bootstrap Work</header>
+    <div class="content">
+        <ul>
+            <li><a href="syntax.html">Intro to Bootstrap</a></li>
+            
+        </ul>
     </div>
-
-    <div class="d-flex bg-info justify-content-center align-items-center" style="height:200px;">
-      <h3>SASS - Syntactically Awesome Stylesheet (CSS Preprocessor)</h3>
-    </div>
-
-
-    <div class="row">
-
-    <div class="col bg-danger text-light d-flex align-items-center justify-content-center" style="height: 100px;">
-        Box 1
-    </div>
-
-    <div class="col bg-warning d-flex align-items-center justify-content-center" style="height: 100px;">
-        Box 2
-    </div>
-
-    <div class="col bg-primary text-light d-flex align-items-center justify-content-center" style="height: 100px;">
-        Box 3
-    </div>
-
-    <div class="col bg-secondary text-light d-flex align-items-center justify-content-center" style="height: 100px;">
-        Box 4
-    </div>    
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    <footer>
+        <div id="footer">&copy; 2026 Harshita | All Rights Reserved</div>
+    </footer>
+    </body>
 </html>
