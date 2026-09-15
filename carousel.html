@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carousel in Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+
+<style>
+    .carousel-item img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carousel-caption{
+    text-shadow: 1px 1px 4px rgb(82, 82, 82);
+}
+</style>
+
+  <body class="bg-primary-subtle">
+    
+    <div class="container mt-5">
+
+    <h1 class="text-center mb-4 text-primary-emphasis fw-bold">Seven Sisters of India</h1>
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-9 col-lg-8">
+
+            <div id="sistersCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+
+                    <button type="button"
+                        data-bs-target="#sistersCarousel"
+                        data-bs-slide-to="0"
+                        class="active">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#sistersCarousel"
+                        data-bs-slide-to="1">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#sistersCarousel"
+                        data-bs-slide-to="2">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#sistersCarousel"
+                        data-bs-slide-to="3">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#sistersCarousel"
+                        data-bs-slide-to="4">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#sistersCarousel"
+                        data-bs-slide-to="5">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#sistersCarousel"
+                        data-bs-slide-to="6">
+                    </button>
+
+                </div>
+
+
+                <!-- Carousel -->
+                <div class="carousel-inner">
+
+                    <!-- Arunachal Pradesh -->
+                    <div class="carousel-item active">
+
+                        <img src="https://i.pinimg.com/736x/f8/3c/23/f83c2324ec85f355a334fccf40fe3793.jpg"
+                            class="d-block w-100"
+                            alt="Arunachal Pradesh">
+
+                        <div class="carousel-caption">
+                            <h3>Arunachal Pradesh</h3>
+                            <p <span class="badge bg-success fst-italic"></span>Capital: Itanagar</p>
+                            <p class="bg-primary-subtle text-primary-emphasis rounded-3">Known for its mountains, monasteries and beautiful valleys.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Assam -->
+                    <div class="carousel-item">
+
+                        <img src="https://i.pinimg.com/736x/1c/56/c9/1c56c9dd4b92f0461b32acfe686dde10.jpg"
+                            class="d-block w-100"
+                            alt="Assam">
+
+                        <div class="carousel-caption">
+                            <h3>Assam</h3>
+                            <p <span class="badge bg-secondary fst-italic"></span>Capital: Dispur</p>
+                            <p class="bg-primary-subtle text-primary-emphasis rounded-3">Famous for tea gardens, wildlife and the Brahmaputra River.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Meghalaya -->
+                    <div class="carousel-item">
+
+                        <img src="https://i.pinimg.com/736x/a8/78/cc/a878ccfeb6b16100c595d684ad17a57f.jpg"
+                            class="d-block w-100"
+                            alt="Meghalaya">
+
+                        <div class="carousel-caption">
+                            <h3>Meghalaya</h3>
+                            <p <span class="badge bg-danger fst-italic"></span>Capital: Shillong</p>
+                            <p class="bg-primary-subtle text-primary-emphasis rounded-3">Known for waterfalls, caves and living root bridges.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Manipur -->
+                    <div class="carousel-item">
+
+                        <img src="https://i.pinimg.com/736x/25/21/ad/2521ad7f50469e47a383ada35e66c6f4.jpg"
+                            class="d-block w-100"
+                            alt="Manipur">
+
+                        <div class="carousel-caption">
+                            <h3>Manipur</h3>
+                            <p <span class="badge bg-primary fst-italic"></span>Capital: Imphal</p>
+                            <p class="bg-primary-subtle text-primary-emphasis rounded-3">Known for Loktak Lake and its rich cultural traditions.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Mizoram -->
+                    <div class="carousel-item">
+
+                        <img src="https://i.pinimg.com/1200x/46/cc/73/46cc734fe69b5451c6d78a4926155435.jpg"
+                            class="d-block w-100"
+                            alt="Mizoram">
+
+                        <div class="carousel-caption">
+                            <h3>Mizoram</h3>
+                            <p <span class="badge bg-light text-dark fst-italic"></span>Capital: Aizawl</p>
+                            <p class="bg-primary-subtle text-primary-emphasis rounded-3">Known for green hills, forests and scenic landscapes.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Nagaland -->
+                    <div class="carousel-item">
+
+                        <img src="https://i.pinimg.com/1200x/c8/b4/eb/c8b4eb2c2d966422c588449f3d33a6f1.jpg"
+                            class="d-block w-100"
+                            alt="Nagaland">
+
+                        <div class="carousel-caption">
+                            <h3>Nagaland</h3>
+                            <p <span class="badge bg-dark fst-italic"></span>Capital: Kohima</p>
+                            <p class="bg-primary-subtle text-primary-emphasis rounded-3">Known for its diverse tribal cultures and Hornbill Festival.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Tripura -->
+                    <div class="carousel-item">
+
+                        <img src="https://i.pinimg.com/736x/23/91/29/239129a1830299406605193997190fa4.jpg"
+                            class="d-block w-100"
+                            alt="Tripura">
+
+                        <div class="carousel-caption">
+                            <h3>Tripura</h3>
+                            <p <span class="badge bg-warning-subtle text-dark fst-italic"></span>Capital: Agartala</p>
+                            <p class="bg-primary-subtle text-primary-emphasis rounded-3">Known for its palaces, temples and natural beauty.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Previous -->
+                <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#sistersCarousel"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                </button>
+
+
+                <!-- Next -->
+                <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#sistersCarousel"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container-fluid mt-5">
+            <p class="text-center text-primary-emphasis">© 2026 Bootstrap Carousel Showcase</p>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
