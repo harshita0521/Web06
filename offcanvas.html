@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+
+  <style>
+
+    *{
+        background: lavenderblush;
+    }
+
+    h2{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+  </style>
+
+
+
+  <body>
+    
+    <div class="container-fluid mt-5">
+
+    <h2 class="text-center mb-4 text-primary-emphasis fw-bold fst-italic">Music</h2>
+    <p  class="p-5">Music is a beautiful form of art that expresses emotions, feelings, and stories through sound. It is enjoyed by people all around the world and comes in many different forms, such as classical, Bollywood, Western, and instrumental music. Music can make us feel happy, relaxed, energetic, or emotional. It also brings people together and is an important part of many cultures and celebrations.
+</p>
+
+    <!-- Open Offcanvas Button -->
+    <button class="btn btn-dark m-3"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#musicMenu">
+        Explore Music
+    </button>
+
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start" id="musicMenu">
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Music Categories</h5>
+
+            <button type="button" class="btn-close"
+                data-bs-dismiss="offcanvas">
+            </button>
+        </div>
+
+
+        <div class="offcanvas-body">
+
+            <p>Choose a music category:</p>
+
+            <!-- Indian Classical -->
+            <button class="btn btn-outline-primary w-100 mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#classical">
+                Indian Classical Music
+            </button>
+
+            <div id="classical" class="collapse mb-3">
+
+                <div class="card mb-2">
+                    <a href="https://youtu.be/_lgACMqCpus?si=PkoaDgxGQGzrBd1v" target="_blank"> 
+                        <img src="https://i.pinimg.com/1200x/66/7a/9f/667a9f2b21c9d9d2b8bc013b10e420d9.jpg" class="card-img-top" alt="Classical Music">
+                    </a>
+
+                    <div class="card-body">
+                        <h6 class="card-title">Piya Tose Naina Lage Re</h6>
+                    </div>
+                </div>
+
+                <div class="card mb-2">
+                    <a href="https://youtu.be/iulF7-i_LuY?si=4KyNmWACfGd12Upb" target="_blank">
+                        <img src="https://i.pinimg.com/1200x/8b/f1/f1/8bf1f16bd16ef0f7b5da1151c552185c.jpg" class="card-img-top" alt="Classical Music">
+                    </a>
+
+                    <div class="card-body">
+                        <h6 class="card-title">Chalte Chalte</h6>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Bollywood -->
+            <button class="btn btn-outline-danger w-100 mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#bollywood">
+                Bollywood Music
+            </button>
+
+            <div id="bollywood" class="collapse mb-3">
+
+                <div class="card mb-2">
+                    <a href="https://youtu.be/b4b1cMVZOUU?si=1_nRtFGSrh-IOxwU" target="_blank">
+                        <img src="https://i.pinimg.com/736x/c9/14/1b/c9141b795c2eda1fbe4a21c538fd389c.jpg" class="card-img-top" alt="Bollywood Song">
+                    </a>
+
+                    <div class="card-body">
+                        <h6 class="card-title">Hookah Bar</h6>
+                    </div>
+                </div>
+
+                <div class="card mb-2">
+                    <a href="https://youtu.be/aT4N7jn2Eww?si=ZmJ7luS6EcHWv3Ep" target="_blank">
+                        <img src="https://i.pinimg.com/736x/68/c0/6a/68c06aa47edfffccfe375a87e380aee2.jpg" class="card-img-top" alt="Bollywood Song">
+                    </a>
+
+                    <div class="card-body">
+                        <h6 class="card-title">Run Down The City - Monica</h6>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Western -->
+            <button class="btn btn-outline-success w-100 mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#western">
+                Western Music
+            </button>
+
+            <div id="western" class="collapse mb-3">
+
+                <div class="card mb-2">
+                    <a href="https://youtu.be/2v0InJbwc9E?si=wxgCiDXYlO_UUWyj" target="_blank">
+                        <img src="https://i.pinimg.com/736x/ae/42/55/ae42558018223c2295f694efba6fb898.jpg" class="card-img-top" alt="western music">
+                    </a>
+
+                    <div class="card-body">
+                        <h6 class="card-title">Love Maybe</h6>
+                    </div>
+                </div>
+
+                <div class="card mb-2">
+                    <a href="https://youtu.be/f5-IY_Ja1RM?si=UCqL4cQ1a4KKJsXW" target="_blank">
+                        <img src="https://i.pinimg.com/736x/0a/33/62/0a33625cf058bd1476214d8c522f3225.jpg" class="card-img-top" alt="western music">
+                    </a>
+
+                    <div class="card-body">
+                        <h6 class="card-title">JVKE - Her</h6>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Instrumental -->
+            <button class="btn btn-outline-warning w-100 mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#instrumental">
+                Instrumental Music
+            </button>
+
+            <div id="instrumental" class="collapse mb-3">
+
+                <div class="card mb-2">
+                    <a href="https://youtu.be/yRrU0zCUVJg?si=tfqNGJZgxCpEUGtU" target="_blank">
+                        <img src="https://i.pinimg.com/736x/bf/25/9a/bf259af4f8e54199c0f69ca37b8ee64b.jpg" class="card-img-top" alt="Instrumental Music">
+                    </a>
+
+                    <div class="card-body">
+                        <h6 class="card-title">Enchanting Flute</h6>
+                    </div>
+                </div>
+
+                <div class="card mb-2">
+                    <a href="https://youtu.be/Onb6_bRJ0Bw?si=5y3pydE7zXpRktAh" target="_blank">
+                        <img src="https://i.pinimg.com/1200x/62/5a/bc/625abc3be09bb155ae32094f3c719649.jpg" class="card-img-top" alt="Instrumental Music">
+                    </a>
+
+                    <div class="card-body">
+                        <h6 class="card-title">Shiv Kailasho Ke Wasi</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
