@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Offcanvas & Tooltip</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
 
@@ -20,7 +20,16 @@
     .card-img-top {
     height: 350px;
     object-fit: cover;
-}
+    }
+
+    :root{
+        --mycolor:rgb(2, 2, 58);
+    }
+
+    .mystyle {
+  --bs-tooltip-bg: var(--mycolor);
+  --bs-tooltip-color: var(--bs-white);
+    }
   </style>
 
 
@@ -190,6 +199,21 @@
 
 </div>
 
+<!-- Tooltip -->
+
+<button type="button" class="btn btn-danger mx-auto d-block mt-5 fw-bold"
+        data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="mystyle"
+        data-bs-title="Tooltip is a Bootstrap plugin.">
+  TOOLTIP
+</button>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+
   </body>
 </html>
